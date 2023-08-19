@@ -5,6 +5,7 @@ import styles from "./home.module.scss";
 import { IconButton } from "./button";
 import SettingsIcon from "../icons/settings.svg";
 import GithubIcon from "../icons/github.svg";
+import OpenAIIcon from "../icons/openai.svg";
 import ChatGptIcon from "../icons/chatgpt.svg";
 import AddIcon from "../icons/add.svg";
 import CloseIcon from "../icons/close.svg";
@@ -22,6 +23,7 @@ import {
   NARROW_SIDEBAR_WIDTH,
   Path,
   REPO_URL,
+  OPERATION_PLATFORM_URL,
 } from "../constant";
 
 import { Link, useNavigate } from "react-router-dom";
@@ -174,8 +176,8 @@ export function SideBar(props: { className?: string }) {
             </Link>
           </div>
           <div className={styles["sidebar-action"]}>
-            <a href={REPO_URL} target="_blank">
-              <IconButton icon={<GithubIcon />} shadow />
+            <a href={OPERATION_PLATFORM_URL} target="_blank">
+              <IconButton icon={<OpenAIIcon />} shadow />
             </a>
           </div>
         </div>
