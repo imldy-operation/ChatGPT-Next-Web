@@ -176,7 +176,11 @@ export function SideBar(props: { className?: string }) {
             </Link>
           </div>
           <div className={styles["sidebar-action"]}>
-            <a href={OPERATION_PLATFORM_URL} target="_blank">
+            <a
+              href={OPERATION_PLATFORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <IconButton icon={<OpenAIIcon />} shadow />
             </a>
           </div>
